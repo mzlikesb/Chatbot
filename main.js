@@ -119,3 +119,23 @@ chatForm.addEventListener('submit', async function(event) {
   // assistant의 답변도 messages에 누적!
   messages.push({ role: "assistant", content: data.content });
 });
+
+// 큰 이미지 모달 관련 코드
+const imageModal = document.getElementById('image-modal');
+const modalImg = document.getElementById('modal-img');
+
+// 채팅창에서 이미지 클릭 시 큰 이미지 모달 열기
+chatDiv.addEventListener('click', function(e) {
+  if (e.target.tagName === 'IMG') {
+    modalImg.src = e.target.src;
+    imageModal.style.display = 'flex';
+  }
+});
+
+// 모달 클릭 시 닫기 (이미지 바깥 영역 클릭)
+imageModal.addEventListener('click', function(e) {
+  if (e.target === imageModal) {
+    imageModal.style.display = 'none';
+    modalImg.src = '';
+  }
+});

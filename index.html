@@ -16,6 +16,11 @@
     <button type="submit">send</button>
   </form>
   <div id="image-preview"></div>
+  <!-- 큰 이미지 모달 -->
+  <div id="image-modal" style="display:none; position:fixed; z-index:1000; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.85); justify-content:center; align-items:center;">
+  <img id="modal-img" src="" alt="큰 이미지" style="max-width:90vw; max-height:90vh; border-radius:12px; box-shadow:0 2px 16px #000;">
+  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
