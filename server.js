@@ -55,7 +55,7 @@ app.post('/api/generate-novelai-image', async (req, res) => {
   // NovelAI API 요청 본문
   const payload = {
     input: prompt,
-    model: "nai-diffusion-4-full", // 최신 모델(필요시 변경)
+    model: "nai-diffusion-4-5-curated", //"nai-diffusion-4-full",
     action: "generate",
     parameters: {
       params_version: 3,
