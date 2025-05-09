@@ -1,0 +1,233 @@
+body {
+    background: #181818;
+    color: #e0e0e0;
+    font-family: "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: #e0e0e0;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+  }
+  
+  #chat {
+    background: #232323;
+    border-radius: 8px;
+    padding: 16px;
+    min-height: 300px;
+    max-width: 600px;
+    margin: 0 auto 16px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    word-break: break-word;
+  }
+  
+  #chat div {
+    margin: 10px 0;
+  }
+  
+  form#chat-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    max-width: 600px;
+    margin: 0 auto 16px auto;
+    flex-wrap: wrap;
+  }
+  
+  input[type="text"] {
+    background: #232323;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+    width: 300px;
+    outline: none;
+    flex: 1 1 200px;
+    min-width: 0;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #666;
+  }
+  
+  input[type="file"] {
+    color: #e0e0e0;
+    background: #232323;
+    border: none;
+    font-size: 1em;
+  }
+  
+  button {
+    background: #333;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  button:hover {
+    background: #444;
+  }
+  
+  pre {
+    background: #181818;
+    color: #e0e0e0;
+    padding: 8px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  code {
+    background: #232323;
+    color: #e0e0e0;
+    padding: 2px 4px;
+    border-radius: 3px;
+  }
+  
+  b {
+    color: #e0e0e0;
+  }
+  
+  #image-preview img {
+    max-width: 120px;
+    max-height: 120px;
+    border-radius: 6px;
+    margin-top: 8px;
+    display: block;
+  }
+  
+  @media (max-width: 700px) {
+    #chat, form#chat-form {
+      max-width: 96vw;
+    }
+    input[type="text"] {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    h2 {
+      font-size: 1.2em;
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
+    #chat {
+      padding: 8px;
+      min-height: 180px;
+    }
+    form#chat-form {
+      gap: 4px;
+      padding: 0 4px;
+    }
+    button, input[type="text"] {
+      font-size: 1em;
+      padding: 6px 8px;
+    }
+    #image-preview img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+  }
+  pre {
+    background: #181818;
+    color: #e0e0e0;
+    padding: 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 12px 0;
+    font-size: 1em;
+  }
+  code {
+    font-family: "Fira Mono", "Consolas", "Menlo", monospace;
+    font-size: 1em;
+  }
+
+  textarea {
+    background: #232323;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+    width: 300px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1em;
+    flex: 1 1 200px;
+    min-width: 0;
+    resize: vertical;
+    min-height: 32px;
+    max-height: 200px;
+  }
+  textarea:focus {
+    border-color: #666;
+  }
+  @media (max-width: 700px) {
+    textarea {
+      width: 100%;
+      min-width: 0;
+    }
+  }
+  form#chat-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto 16px auto;
+    width: 100%;
+  }
+  
+  form#chat-form > * {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    background: #232323;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 8px;
+    outline: none;
+    font-family: inherit;
+    font-size: 1em;
+    min-height: 32px;
+    max-height: 200px;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: #666;
+  }
+  
+  input[type="file"] {
+    color: #e0e0e0;
+    background: #232323;
+    border: none;
+    font-size: 1em;
+    padding: 8px 0;
+  }
+  
+  button {
+    background: #333;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 0;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background: #444;
+  }
+  

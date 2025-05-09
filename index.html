@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>GPT-4o 마크다운 챗봇</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/github-dark.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/lib/highlight.min.js"></script>
+</head>
+<body>
+  <div id="chat"></div>
+  <form id="chat-form" autocomplete="off">
+    <textarea id="input" placeholder="메시지를 입력하세요" required rows="2" style="resize:vertical; min-height:32px; max-height:200px;"></textarea>
+    <input id="image-input" type="file" accept="image/*">
+    <button type="submit">send</button>
+  </form>
+  <div id="image-preview"></div>
+  <script src="main.js"></script>
+</body>
+</html>
